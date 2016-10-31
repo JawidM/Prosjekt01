@@ -1,14 +1,16 @@
 * {
-box-sizing: border-box;
+    box-sizing: border-box;
 }
+
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 0;
     background-color: #fff;
 }
 
-.headerimage{
+.headerimage {
     width: 100%;
+    background-size: auto;
     margin-top: 0;
     margin-right: 0;
 }
@@ -23,9 +25,6 @@ body {
     color: #502a3f;
     margin-top: 0;
     margin-left: 10px;
-   
-
-
 }
 
 .headingtext h3 {
@@ -34,12 +33,11 @@ body {
     margin-bottom: -15px;
     margin-left: 20px;
     padding-bottom: 10px;
-    
 }
 
 .menybar {
     background-color: #502a3f;
-    width:100%;
+    width: 100%;
     margin-bottom: 0;
     margin-top: 15px;
     text-align: center;
@@ -48,7 +46,6 @@ body {
     display: block;
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
-    
 }
 
 .menybar a {
@@ -63,13 +60,20 @@ body {
     margin-right: 10px;
 }
 
+ul.menybar li.icon {
+    display: none;
+}
+
+ul.menybar li a:hover {
+    color: grey;
+}
+
 .container {
     margin: auto;
     margin-top: -40px;
     margin-left: 20px;
     position: relative;
     z-index: 10;
-
 }
 
 .container > div {
@@ -79,12 +83,12 @@ body {
     border-radius: 5px;
     width: calc(33% - 20px);
     margin-right: 20px;
-    height: 300px;
+    min-height: 300px;
+    height: auto;
     padding: 20px;
     margin-bottom: 20px;
-    position:relative;
+    position: relative;
     box-shadow: 5 0 5px grey;
-    
 }
 
 .container a {
@@ -93,17 +97,67 @@ body {
     right: 10px;
 }
 
-.container1 {
-
+@media (max-width: 680px) {
+    .container > div {
+        width: 98%;
+        float: none;
+    }
 }
 
-.container2 {
-
-
+@media screen and (max-width:680px) {
+    ul.menybar li:not(:first-child) {
+        display: none;
+    }
+    ul.menybar li.icon {
+        float: right;
+        display: inline-block;
+    }
 }
 
-.container3{
+@media screen and (max-width:680px) {
+    ul.menybar.responsiv {
+        position: relative;
+    }
+    ul.menybar.responsiv li.icon {
+        position: absolute;
+        right: 0;
+        top: 10px;
+    }
+    ul.menybar.responsiv li {
+        float: none;
+        display: inline;
+    }
+    ul.menybar.responsiv li a {
+        display: block;
+        text-align: center;
+    }
+}
 
-    
-    
+.kek {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.rad1,
+.rad2,
+.rad3 {
+    width: calc(35px /2);
+    height: calc(5px/2);
+    background-color: white;
+    margin: calc(6px/2) 0;
+    transition: 0.4s;
+}
+
+.transform .rad1 {
+    transform -webkit-transform: rotate(-45deg) translate(-4.5px, 3px);
+    transform: rotate(-45deg) translate(-4.5px, 3px);
+}
+
+.transform .rad2 {
+    opacity: 0;
+}
+
+.transform .rad3 {
+    -webkit-transform: rotate(45deg) translate(-4px, -4px);
+    transform: rotate(45deg) translate(-4px, -4px);
 }
