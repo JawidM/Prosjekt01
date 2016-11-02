@@ -68,12 +68,39 @@ ul.menybar li a:hover {
     color: grey;
 }
 
+
+
 .container {
     margin: auto;
     margin-top: -40px;
     margin-left: 20px;
     position: relative;
     z-index: 10;
+}
+
+.problemcontainer {
+    
+    background-color: #fdfdfd;
+    border: 1px solid #dd74a1;
+    border-radius: 5px;
+    width: calc(80% - 20px);
+    margin-right: 20px;
+
+    height: auto;
+    margin:auto;
+    margin-bottom: 20px;
+    position: relative;
+    box-shadow: 5 0 5px grey;
+
+}
+
+.problemcontainer img {
+    width: 50%;
+    margin: 20px;
+}
+
+.problemcontainer p {
+    margin: 20px;
 }
 
 .container > div {
