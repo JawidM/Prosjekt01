@@ -68,8 +68,6 @@ ul.menybar li a:hover {
     color: grey;
 }
 
-
-
 .container {
     margin: auto;
     margin-top: -40px;
@@ -78,20 +76,21 @@ ul.menybar li a:hover {
     z-index: 10;
 }
 
+.contentcontainer {
+    margin-top: -40px;
+}
+
 .problemcontainer {
-    
     background-color: #fdfdfd;
     border: 1px solid #dd74a1;
     border-radius: 5px;
     width: calc(80% - 20px);
     margin-right: 20px;
-
     height: auto;
-    margin:auto;
+    margin: auto;
     margin-bottom: 20px;
     position: relative;
     box-shadow: 5 0 5px grey;
-
 }
 
 .problemcontainer img {
@@ -132,7 +131,7 @@ ul.menybar li a:hover {
 }
 
 @media screen and (max-width:680px) {
-    ul.menybar li:not(:first-child) {
+    ul.menybar li:not(: first-child) {
         display: none;
     }
     ul.menybar li.icon {
