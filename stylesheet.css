@@ -140,6 +140,11 @@ ul.menybar li a:hover {
     }
 }
 
+div.contentcontainer > div.problemcontainer > h1 {
+    font-size: 175%;
+    margin: 20px;
+}
+
 @media screen and (max-width:680px) {
     ul.menybar.responsiv {
         position: relative;
@@ -157,6 +162,10 @@ ul.menybar li a:hover {
         display: block;
         text-align: center;
     }
+}
+
+ul#menubar.menybar li a.active {
+    color: lightcoral;
 }
 
 .kek {
