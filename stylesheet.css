@@ -102,6 +102,15 @@ ul.menybar li a:hover {
     margin: 20px;
 }
 
+.problemcontainer img {
+    width: 25%;
+}
+
+.problemcontainer address {
+    margin-left: 40px;
+    margin-bottom: 40px;
+}
+
 .container > div {
     float: left;
     background-color: #fdfdfd;
